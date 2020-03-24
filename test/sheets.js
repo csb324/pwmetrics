@@ -95,7 +95,7 @@ describe('Sheets', () => {
       oauthStub.restore();
     });
 
-    it('should at least consider running', async() => {
+    it('should at least consider running', () => {
       sheets.appendResults(metricsResults);
       sinon.assert.calledOnce(spy);
     });
